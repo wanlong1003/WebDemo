@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        .container {
+            height: 100%;
+            position: relative;
+        }
+
+        .widget{
+            position:absolute;
+            left:100px;
+            top:100px;
+        }
+    </style>
+    <script>
+        function init() {
+            var dragdiv = document.querySelector('.widget');
+            var x, y;  //记录到点击时鼠标到移动框左边和上边的距离
+
+            document.getElementsByClassName("container")[0].ondrop = function (e) {
+                dragdiv.style.left = (e.pageX - x) + 'px';
+                dragdiv.style.top = (e.pageY - y) + 'px';
+                e.preventDefault() || e.stopPropagation();  //不取消，firefox中会触发网页跳转到查找setData中的内容
+            };
+
+            document.getElementsByClassName("container")[0].ondragover = function (e) {
+                e.preventDefault() || e.stopPropagation();
+            }
+
+            document.getElementsByClassName("widget")[0].ondragstart = function (e) {
+                e.dataTransfer.effectAllowed = "move";  //移动效果
+                e.dataTransfer.setData("text", '');  //附加数据，　没有这一项，firefox中无法移动
+                x = e.offsetX || e.layerX;
+                y = e.offsetY || e.layerY;
+                return true;
+            }
+        }
+    </script>
+</head>
+<body onload="init()">
+    <div class="container">
+        <div class="widget" draggable="true">
+            <img src="Images/camera.jpg" />
+        </div>        
+    </div>
+
+   
+</body>
+</html>
+
