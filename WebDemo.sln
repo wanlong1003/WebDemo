@@ -3,7 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Html", "Html\Html.csproj", "{6FE95968-C026-4146-9548-8BE6654A618C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Css", "Css\Css.csproj", "{725CAD1C-6D9F-4AD2-9DEA-E6B4CD6C5526}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Javascript", "Javascript\Javascript.csproj", "{9B0039F1-2801-4E45-BC8E-30D20DA07308}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootstrap", "Bootstrap\Bootstrap.csproj", "{3506AEEA-505F-4556-97DC-CB24A1E6FACA}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FE95968-C026-4146-9548-8BE6654A618C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FE95968-C026-4146-9548-8BE6654A618C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FE95968-C026-4146-9548-8BE6654A618C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FE95968-C026-4146-9548-8BE6654A618C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{725CAD1C-6D9F-4AD2-9DEA-E6B4CD6C5526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{725CAD1C-6D9F-4AD2-9DEA-E6B4CD6C5526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{725CAD1C-6D9F-4AD2-9DEA-E6B4CD6C5526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{725CAD1C-6D9F-4AD2-9DEA-E6B4CD6C5526}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B0039F1-2801-4E45-BC8E-30D20DA07308}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B0039F1-2801-4E45-BC8E-30D20DA07308}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B0039F1-2801-4E45-BC8E-30D20DA07308}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B0039F1-2801-4E45-BC8E-30D20DA07308}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3506AEEA-505F-4556-97DC-CB24A1E6FACA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3506AEEA-505F-4556-97DC-CB24A1E6FACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3506AEEA-505F-4556-97DC-CB24A1E6FACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3506AEEA-505F-4556-97DC-CB24A1E6FACA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
